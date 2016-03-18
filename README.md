@@ -2,15 +2,17 @@
 
 Fix syntax errors in po files.
 
+[work in progress.]
+
 # Installation
 
-If you don't use `pipsi`, you're missing out.
-Here are [installation instructions](https://github.com/mitsuhiko/pipsi#readme).
-
-Simply run:
+If you're using [pipsi](https://github.com/mitsuhiko/pipsi#readme), simply run:
 
     $ pipsi install .
 
+Otherwise:
+
+    $ pip install .
 
 # Usage
 

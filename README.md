@@ -2,9 +2,9 @@
 
 A tool that helps you fix common errors usually reported by `msgfmt` when compiling textual translation (po files) to binary messages (mo files).
 
-The tool can take care of matching linebreak issues at the beginning and ending of source and translation strings, additionally it fixes improperly escaped characters in translation strings.
+The tool can take care of a few issues for now, like matching linebreak issues at the beginning and ending of source and translation strings, it can also fix improperly escaped characters in translation strings.
 
-The tool will print a report of syntax errors that couldn't be fixed, in a way a little more readable than default msgfmt.
+A report of other syntax errors that couldn't be fixed will be printed at the end, in a structure way a bit more readable than `msgfmt`.
 
 ```bash
 % pof ~/django.po
@@ -23,6 +23,10 @@ Processing: /Users/beshr/django.po
 | 20624       | 'msgstr' is not a valid Python format string, unlike 'msgid'.                 |  In the directive number 7, the character 'y' is not a valid conversion specifier. |
 +-------------+-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 ```
+
+# Usecases
+
+There are many ways to end up with po files with broken syntax, mainly I'd say is working with translators who aren't fimilar with `gettext` and the possible errors that could be reported by `msgfmt` when it's compiling textual translations messages to binary ones.
 
 # Installation
 
